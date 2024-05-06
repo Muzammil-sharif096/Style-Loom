@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaShoppingCart } from 'react-icons/fa'
 import { FaTimes, FaBars } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [showNavbar, setShowNavbar] = useState(false);
@@ -8,8 +9,16 @@ const Navbar = () => {
     return (
         <nav className='xl:px-28 p-4 py-4 bg-[#262626] flex justify-between items-center'>
             <ul className='lg:flex hidden items-center cursor-pointer gap-4'>
-                <li className='w-24 p-3.5 text-center rounded-md font-light tracking-widest text-sm text-white bg-[#1A1A1A]'><button>Home</button></li>
-                <li className='w-24 p-3  text-center rounded-md font-light tracking-widest text-sm border-2 border-dashed border-[#81807E] text-white bg-[#262626]'><button>Products</button></li>
+                <Link to="/">
+                    <li className='w-24 p-3.5 text-center rounded-md font-light tracking-widest text-sm text-white bg-[#1A1A1A]'>
+                        Home
+                    </li>
+                </Link>
+                <Link to="/products">
+                    <li className='w-24 p-3  text-center rounded-md font-light tracking-widest text-sm border-2 border-dashed border-[#81807E] text-white bg-[#262626]'>
+                        Products
+                    </li>
+                </Link>
             </ul>
             <img src="./img/Logo (9).png" alt="" />
             <ul className='lg:flex hidden items-center cursor-pointer gap-4'>

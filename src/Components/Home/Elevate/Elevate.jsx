@@ -22,7 +22,7 @@ const Elevate = () => {
                 </div>
                 <div className='grid 2xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 grid-cols-1 w-full p-1'>
                     {
-                        elevate.map((ele) => {
+                        elevate.slice(0, 6).map((ele) => {
                             return (
                                 <div className='border-[#81807E] border-2 tracking-wide border-dashed  p-4 xl:p-14 space-y-6' >
                                     <img className='w-full' src={ele.img} alt="" />

@@ -102,6 +102,27 @@ const elevate = [
         fit: "Lightweight",
         price: "$19.99",
     },
+    {
+        img: "/img/Shape.png",
+        h2: "Hand Bag",
+        p: "Bold Backpack",
+        fit: "Roomy interior",
+        price: "$129.99",
+    },
+    {
+        img: "/img/Shape (1).png",
+        h2: "Hand Bag",
+        p: "Night Out Glam",
+        fit: "Compact size",
+        price: "$79.99",
+    },
+    {
+        img: "/img/Shape (2).png",
+        h2: "Hand Bag",
+        p: "Urban Chic Handbag",
+        fit: "Spacious",
+        price: "$49.99",
+    },
 ]
 
 
@@ -143,6 +164,8 @@ const testimonial = [
         p: "Stylish sneakers that don't compromise on comfort. StyleLoom knows how to balance fashion and functionality.",
     },
 ]
+
+
 
 export {
     crafting, navigating, elevate, testimonial,
