@@ -1,20 +1,24 @@
-import React, { useState } from 'react'
-import { FaShoppingCart } from 'react-icons/fa'
+import React, { useState } from 'react';
+import { FaShoppingCart } from 'react-icons/fa';
 import { FaTimes, FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [showNavbar, setShowNavbar] = useState(false);
 
+    const handleLinkClick = () => {
+        setShowNavbar(false);
+    };
+
     return (
         <nav className='xl:px-28 p-4 py-4 bg-[#262626] flex justify-between items-center'>
             <ul className='lg:flex hidden items-center cursor-pointer gap-4'>
-                <Link to="/">
+                <Link to="/" >
                     <li className='w-24 p-3.5 text-center rounded-md font-light tracking-widest text-sm text-white bg-[#1A1A1A]'>
                         Home
                     </li>
                 </Link>
-                <Link to="/products">
+                <Link to="/products" >
                     <li className='w-24 p-3  text-center rounded-md font-light tracking-widest text-sm border-2 border-dashed border-[#81807E] text-white bg-[#262626]'>
                         Products
                     </li>
@@ -23,7 +27,9 @@ const Navbar = () => {
             <img src="./img/Logo (9).png" alt="" />
             <ul className='lg:flex hidden items-center cursor-pointer gap-4'>
                 <li className='w-12 py-3 text-center rounded-md font-light tracking-widest text-sm text-white bg-[#1A1A1A]'><button><FaShoppingCart /></button></li>
-                <li className='w-24 py-3 text-center rounded-md font-light tracking-widest text-sm  bg-[#AE9B84] text-white'><button>Contact</button></li>
+                <Link to='/contact'>
+                    <li className='w-24 py-3 text-center rounded-md font-light tracking-widest text-sm  bg-[#AE9B84] text-white'><button>Contact</button></li>
+                </Link>
             </ul>
             <button onClick={() => setShowNavbar(true)} className='lg:hidden block'>
                 <FaBars className='text-2xl text-white' />
@@ -40,15 +46,15 @@ const Navbar = () => {
                             <img src="./img/Logo (9).png" alt="" />
                             <hr className='border-[#63B597] p-2 mt-2' />
                             <ul className='text-white flex  flex-col cursor-pointer items-start text-lg  font-semibold text-center'>
-                                <Link to='/'>
+                                <Link to='/' onClick={handleLinkClick}>
                                     <li>Home</li>
                                 </Link>
                                 <hr className='border-[#63B597]  w-full p-2 mt-2' />
-                                <Link to='/products'>
+                                <Link to='/products' onClick={handleLinkClick}>
                                     <li>Products</li>
                                 </Link>
                                 <hr className='border-[#63B597] w-full p-2 mt-2' />
-                                <Link to='/contact'>
+                                <Link to='/contact' onClick={handleLinkClick}>
                                     <li>Contact</li>
                                 </Link>
                                 <hr className='border-[#63B597]  w-full p-2 mt-2' />
@@ -61,4 +67,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;
