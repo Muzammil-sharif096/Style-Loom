@@ -39,12 +39,18 @@ const Navbar = () => {
                         <div className='mt-4 p-2'>
                             <img src="./img/Logo (9).png" alt="" />
                             <hr className='border-[#63B597] p-2 mt-2' />
-                            <ul className='text-white flex  flex-col cursor-pointer items-start text-lg text-base font-semibold text-center'>
-                                <li>Home</li>
+                            <ul className='text-white flex  flex-col cursor-pointer items-start text-lg  font-semibold text-center'>
+                                <Link to='/'>
+                                    <li>Home</li>
+                                </Link>
                                 <hr className='border-[#63B597]  w-full p-2 mt-2' />
-                                <li>Products</li>
+                                <Link to='/products'>
+                                    <li>Products</li>
+                                </Link>
                                 <hr className='border-[#63B597] w-full p-2 mt-2' />
-                                <li>Contact</li>
+                                <Link to='/contact'>
+                                    <li>Contact</li>
+                                </Link>
                                 <hr className='border-[#63B597]  w-full p-2 mt-2' />
                             </ul>
                         </div>
