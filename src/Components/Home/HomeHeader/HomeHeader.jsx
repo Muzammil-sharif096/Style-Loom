@@ -10,11 +10,11 @@ const HomeHeader = () => {
                 </div>
                 <div className='flex flex-col xl:flex-row items-center justify-between'>
                     <div className='xl:p-14 p-4 w-full space-y-2' >
-                        <ul className='flex gap-4 text-white tracking-wider text-center items-center'>
-                            <li className='w-24  sm:p-2 p-1.5 sm:text-base text-sm border-[#81807E] border-2 border-dashed  rounded-md '>All</li>
-                            <li className='w-24  sm:p-2 p-1.5 sm:text-base text-sm border-[#81807E] border-2 border-dashed  rounded-md '>Mens</li>
-                            <li className='w-24  sm:p-2 p-1.5 sm:text-base text-sm border-[#81807E] border-2 border-dashed  rounded-md '>Womens</li>
-                            <li className='w-24  sm:p-2 p-1.5 sm:text-base text-sm border-[#81807E] border-2 border-dashed  rounded-md '>Kids</li>
+                        <ul className='flex gap-4 text-white cursor-pointer tracking-wider text-center items-center'>
+                            <li className='w-24  sm:p-2 p-1.5 sm:text-base text-sm border-[#81807E] border-2 border-dashed hover:bg-[#81807E]  rounded-md '>All</li>
+                            <li className='w-24  sm:p-2 p-1.5 sm:text-base text-sm border-[#81807E] border-2 border-dashed hover:bg-[#81807E]  rounded-md '>Mens</li>
+                            <li className='w-24  sm:p-2 p-1.5 sm:text-base text-sm border-[#81807E] border-2 border-dashed hover:bg-[#81807E]  rounded-md '>Womens</li>
+                            <li className='w-24  sm:p-2 p-1.5 sm:text-base text-sm border-[#81807E] border-2 border-dashed hover:bg-[#81807E]  rounded-md '>Kids</li>
                         </ul>
                         <h2 className='xl:text-5xl sm:text-lg text-base tracking-wider pt-4 text-white'>ELEVATE YOUR STYLE WITH <br /> STYLELOOM</h2>
                         <p className='xl:text-lg text-sm text-[#81807E]'>Explore a world of fashion at StyleLoom, where trends meet affordability. Immerse yourself in the latest styles and seize exclusive  promotions.</p>

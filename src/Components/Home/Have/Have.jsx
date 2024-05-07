@@ -6,15 +6,15 @@ const Have = () => {
             <div className='border-[#81807E] border-2 py-4 border-dashed relative overflow-hidden rounded-md'>
                 <div className='flex'>
                     <div className='p-4 xl:p-14 space-y-4'>
-                        <h1 className='xl:text-5xl sm:text-lg text-base tracking-wider text-white'>NAVIGATING THE STYLELOOM FASHION JOURNEY.</h1>
+                        <h1 className='xl:text-5xl sm:text-lg text-base tracking-wider text-white'>NAVIGATING HAVE THE STYLELOOM FASHION JOURNEY.</h1>
                         <p className='xl:text-lg text-sm text-[#81807E]'>At StyleLoom, we've designed a straightforward shopping experience to make fashion accessible.</p>
                         <div className='overflow-x-auto'>
-                            <ul className='flex sm:gap-4 gap-3  text-white tracking-wider text-center items-center'>
-                                <li className='sm:w-24 px-3  p-1 sm:text-base text-sm border-[#81807E] border-2 border-dashed  rounded-md '>All</li>
-                                <li className='sm:w-24 px-3  p-1 sm:text-base text-sm border-[#81807E] border-2 border-dashed  rounded-md '>Odering</li>
-                                <li className='sm:w-24 px-3  p-1 sm:text-base text-sm border-[#81807E] border-2 border-dashed  rounded-md '>Shipping</li>
-                                <li className='sm:w-24 px-3 sm:flex hidden   p-1 sm:text-base text-sm border-[#81807E] border-2 border-dashed  rounded-md '>Returns</li>
-                                <li className='sm:w-24 px-3 sm:flex hidden   p-1 sm:text-base text-sm border-[#81807E] border-2 border-dashed  rounded-md '>Support</li>
+                            <ul className='flex sm:gap-4 gap-3 cursor-pointer  text-white tracking-wider text-center items-center'>
+                                <li className='sm:w-24 px-3  p-1 sm:text-base hover:bg-[#81807E] text-sm border-[#81807E] border-2 border-dashed  rounded-md '>All</li>
+                                <li className='sm:w-24 px-3  p-1 sm:text-base hover:bg-[#81807E] text-sm border-[#81807E] border-2 border-dashed  rounded-md '>Odering</li>
+                                <li className='sm:w-24 px-3  p-1 sm:text-base hover:bg-[#81807E] text-sm border-[#81807E] border-2 border-dashed  rounded-md '>Shipping</li>
+                                <li className='sm:w-24 px-3 sm:flex hidden hover:bg-[#81807E]   p-1 sm:text-base text-sm border-[#81807E] border-2 border-dashed  rounded-md '>Returns</li>
+                                <li className='sm:w-24 px-3 sm:flex hidden hover:bg-[#81807E]   p-1 sm:text-base text-sm border-[#81807E] border-2 border-dashed  rounded-md '>Support</li>
                             </ul>
                         </div>
                     </div>

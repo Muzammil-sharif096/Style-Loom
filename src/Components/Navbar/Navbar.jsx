@@ -19,7 +19,7 @@ const Navbar = () => {
                     </li>
                 </Link>
                 <Link to="/products" >
-                    <li className='w-24 p-3  text-center rounded-md font-light tracking-widest text-sm border-2 border-dashed border-[#81807E] text-white bg-[#262626]'>
+                    <li className='w-24 p-3  text-center rounded-md font-light tracking-widest text-sm border-2 border-dashed border-[#81807E] text-white bg-[#262626] hover:bg-[#81807E]'>
                         Products
                     </li>
                 </Link>
