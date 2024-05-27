@@ -1,6 +1,9 @@
 import React from 'react'
 import { elevate } from '../../../Data'
+import { Link } from 'react-router-dom'
 const ProductHeader = () => {
+    const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
     return (
         <div className='xl:px-28 p-4 py-8 bg-[#262626]'>
             <div className='border-[#81807E] border-2 py-4 border-dashed relative overflow-hidden rounded-md'>
@@ -30,7 +33,9 @@ const ProductHeader = () => {
                         elevate.slice(0, 3).map((ele) => {
                             return (
                                 <div className='border-[#81807E] border-2 tracking-wide border-dashed p-4 xl:p-14 space-y-6' >
-                                    <img className='w-full' src={ele.img} alt="" />
+                                    <Link onClick={scrollTop} to='/productdetail'>
+                                        <img className='w-full' src={ele.img} alt="" />
+                                    </Link>
                                     <div className='flex  items-center justify-between'>
                                         <h2 className='text-white w-32 p-2 text-center rounded-full bg-[#1A1A1A] text-sm tracking-wider'>{ele.h2}</h2>
                                         <button className='hover:bg-[#81807E] rounded-lg xl:w-40 w-28  xl:h-12 h-8 border-[#81807E] border-2 border-dashed text-white text-base tracking-widest bg-[#1A1A1A]'>Shop Now</button>
@@ -56,7 +61,9 @@ const ProductHeader = () => {
                         elevate.slice(3, 6).map((ele) => {
                             return (
                                 <div className='border-[#81807E] border-2 tracking-wide border-dashed p-4 xl:p-14 space-y-6' >
-                                    <img className='w-full' src={ele.img} alt="" />
+                                    <Link onClick={scrollTop} to='/productdetail'>
+                                        <img className='w-full' src={ele.img} alt="" />
+                                    </Link>
                                     <div className='flex  items-center justify-between'>
                                         <h2 className='text-white w-32 p-2 text-center rounded-full bg-[#1A1A1A] text-sm tracking-wider'>{ele.h2}</h2>
                                         <button className='hover:bg-[#81807E] rounded-lg xl:w-40 w-28  xl:h-12 h-8 border-[#81807E] border-2 border-dashed text-white text-base tracking-widest bg-[#1A1A1A]'>Shop Now</button>
@@ -82,7 +89,9 @@ const ProductHeader = () => {
                         elevate.slice(6, 9).map((ele) => {
                             return (
                                 <div className='border-[#81807E] border-2 tracking-wide border-dashed p-4 xl:p-14 space-y-6' >
-                                    <img className='w-full' src={ele.img} alt="" />
+                                    <Link onClick={scrollTop} to='/productdetail'>
+                                        <img className='w-full' src={ele.img} alt="" />
+                                    </Link>
                                     <div className='flex  items-center justify-between'>
                                         <h2 className='text-white w-32 p-2 text-center rounded-full bg-[#1A1A1A] text-sm tracking-wider'>{ele.h2}</h2>
                                         <button className='hover:bg-[#81807E] rounded-lg xl:w-40 w-28  xl:h-12 h-8 border-[#81807E] border-2 border-dashed text-white text-base tracking-widest bg-[#1A1A1A]'>Shop Now</button>
